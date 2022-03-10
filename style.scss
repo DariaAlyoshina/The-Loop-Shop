@@ -1,0 +1,111 @@
+$accent: #D7B399;
+$dark: #212121;
+$light: #F9F6F1;
+$gray: #CBCFD4;
+$light-gray: #F4F4F4;
+$dark-gray: #8D8D8D;
+$red: #D84033;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-light {
+     background-color: $light;
+ }
+
+.wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header{
+    padding-top: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 126px;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    &-item{
+        margin-right: 52px;
+    }
+    &-link{
+        color: $dark;
+        text-decoration: none;
+    }
+}
+
+.cart {
+    background-image: url(../img/basket-icon.svg);
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    display: block;
+    width: 30px;
+    height: 30px;
+    &-count{
+        background-image: url(../img/cart-bg.svg);
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 10px 24px;
+        display: block;
+    }
+}
+.btn{
+    background-color: $accent;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 28px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    &-item{
+        flex: 0 0 50%;
+    }
+    .sale{
+        &-description{
+            font-size: 30px;
+            letter-spacing: -0.6;
+        }
+        &-title{
+            font-size: 55px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.box{
+    position: relative;
+    &-price{
+        top: 35px;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        &-old{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &-new{
+            margin-top: 17px;
+            font-size: 42px;
+            font-weight: 700;
+            color: #D84033;
+        }
+    }
+}
